@@ -5,16 +5,16 @@ public class pyramiid{
     if(korgus<=0){throw new RuntimeException("Sobimatu korgus");}
     if(kkorgus<=0){throw new RuntimeException("Sobimatu kulje korgus");}
     d=diameeter;
-    k=korgus; //püramiidi kõrgus
+    k=korgus; 
     h=kkorgus;
   }
-  public double PPindala(){ //Põhja pindala
+  public double PPindala(){ 
     return Math.round(d*d);
   }
   public double PYmbermoot(){
     return Math.round(2*(d+d));
   }
-  public double KPindala(){ //Külgpindala
+  public double KPindala(){ 
     return Math.round(PYmbermoot()*h/2);
   }
   public double KoguPindala(){
@@ -27,3 +27,5 @@ public class pyramiid{
 		return "Pyramiid "+d+" x "+d+", Pohja umbermoot "+PYmbermoot()+",cm Pohja pindala "+PPindala()+" cm2 Kulgpindala "+KPindala()+" cm2 Kogupindala "+KoguPindala()+" cm2 Ruumala "+Ruumala()+" cm3";
 	}
 }
+
+
